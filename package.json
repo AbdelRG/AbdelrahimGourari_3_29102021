@@ -1,0 +1,23 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "**Version hébergée**:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass":"sass --watch ./sources/sass/main.scss:./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdelRG/projet-integration-2.git"
+  },
+  "author": "abdelrahim gourari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdelRG/projet-integration-2/issues"
+  },
+  "homepage": "https://github.com/AbdelRG/projet-integration-2#readme",
+  "dependencies": {
+    "sass": "^1.43.4"
+  }
+}
