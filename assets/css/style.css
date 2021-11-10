@@ -1,5 +1,67 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .Ohmyfood__logo {
+  width: 50%;
+  height: 50%;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.restaurantSearch .restaurantSearch__localisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  box-shadow: 0px -1px 2px silver;
+  margin-top: 20px;
+}
+.restaurantSearch .restaurantSearch__localisation .fa-map-marker-alt {
+  color: #353535;
+  min-width: 14px;
+  padding-right: 20px;
+}
+.restaurantSearch .restaurantSearch__localisation .restaurantSearch__p1 {
+  color: #353535;
+}
+.restaurantSearch .restaurantSearch__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+.restaurantSearch .restaurantSearch__description .restaurantSearch__title {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.restaurantSearch .restaurantSearch__description .restaurantSearch__p2 {
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 30px;
+  margin-top: 25px;
+}
+.restaurantSearch .restaurantSearch__description .button-purple {
+  margin-bottom: 50px;
+}
+
 body {
-  background-color: red;
+  font-family: "Roboto", sans-serif;
+}
+
+.button-purple {
+  border-radius: 25px 25px 25px 25px;
+  color: #ffffff;
+  background: linear-gradient(#ff79da, #9356dc);
+  min-height: 50px;
+  min-width: 218px;
+  border-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

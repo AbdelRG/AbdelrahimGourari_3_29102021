@@ -1,3 +1,5 @@
-body {
-  background-color: red;
-}
+@import "./utils/variables";
+@import "./layout/header";
+@import "./composants/restaurantSearch";
+@import "./base/typography";
+@import "./composants/buttons";
