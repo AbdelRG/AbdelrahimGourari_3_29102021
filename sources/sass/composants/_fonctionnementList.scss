@@ -1,0 +1,48 @@
+.fonctionnementList__title {
+  margin-left: 20px;
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.fonctionnementList__element {
+  display: flex;
+  box-shadow: 1px 1px 8px 1px $darkGrey;
+  background-color: $grey;
+  min-height: 75px;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 18px 18px 18px 18px;
+  min-width: 325px;
+  margin-right: 20px;
+  margin-left: 25px;
+
+  .fonctionnementList__elementNumber {
+    display: flex;
+    border-radius: 50%;
+    min-height: 25px;
+    min-width: 25px;
+    color: $white;
+    background-color: $colour-primary;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: -10px;
+  }
+  //icon
+  .fa-mobile-alt {
+    color: $iconGrey;
+    margin-right: 30px;
+  }
+  .fa-list-ul {
+    color: $iconGrey;
+    margin-right: 30px;
+  }
+  .fa-store {
+    color: $iconGrey;
+    margin-right: 30px;
+  }
+  .fonctionnementList__elementP {
+    font-weight: bold;
+  }
+}

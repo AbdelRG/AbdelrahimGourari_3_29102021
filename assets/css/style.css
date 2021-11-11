@@ -64,4 +64,51 @@ body {
   font-size: 16px;
 }
 
+.fonctionnementList__title {
+  margin-left: 20px;
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.fonctionnementList__element {
+  display: flex;
+  box-shadow: 1px 1px 8px 1px #eaeaea;
+  background-color: #f6f6f6;
+  min-height: 75px;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 18px 18px 18px 18px;
+  min-width: 325px;
+  margin-right: 20px;
+  margin-left: 25px;
+}
+.fonctionnementList__element .fonctionnementList__elementNumber {
+  display: flex;
+  border-radius: 50%;
+  min-height: 25px;
+  min-width: 25px;
+  color: #ffffff;
+  background-color: #9356dc;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: -10px;
+}
+.fonctionnementList__element .fa-mobile-alt {
+  color: #7e7e7e;
+  margin-right: 30px;
+}
+.fonctionnementList__element .fa-list-ul {
+  color: #7e7e7e;
+  margin-right: 30px;
+}
+.fonctionnementList__element .fa-store {
+  color: #7e7e7e;
+  margin-right: 30px;
+}
+.fonctionnementList__element .fonctionnementList__elementP {
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */
