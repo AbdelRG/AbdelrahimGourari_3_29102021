@@ -46,6 +46,16 @@ header .Ohmyfood__logo {
   margin-bottom: 50px;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -109,6 +119,61 @@ body {
 }
 .fonctionnementList__element .fonctionnementList__elementP {
   font-weight: bold;
+}
+
+.restaurantList {
+  margin-top: 60px;
+  background-color: #f6f6f6;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.restaurantList .restaurantList__title {
+  padding-top: 50px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  margin-left: -225px;
+  font-size: 25px;
+}
+.restaurantList .restaurantCard {
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 1px 1px 8px 1px silver;
+  max-width: 335px;
+  margin-left: 15px;
+  margin-right: 20px;
+  max-height: 252px;
+  min-width: 335px;
+  min-height: 252px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurantList .restaurantCard .restaurantCard__caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.restaurantList .restaurantCard .restaurantCard__caption .fa-heart {
+  margin-right: 15px;
+  font-size: 25px;
+}
+.restaurantList .restaurantCard .restaurantCard__caption .restaurantCard__info {
+  margin-left: 15px;
+}
+.restaurantList .restaurantCard .restaurantCard__caption .restaurantCard__info .restaurantCard__desc {
+  margin: 2px;
+  font-weight: bold;
+}
+.restaurantList .restaurantCard .restaurantCard__caption .restaurantCard__info .restaurantCard__localisation {
+  margin: 2px;
+}
+.restaurantList .restaurantCard .restaurantCard__img {
+  object-fit: cover;
+  max-height: 175px;
+  width: 335px;
+  border-radius: 15px 15px 0px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
