@@ -1,0 +1,33 @@
+footer {
+  margin-top: 0px;
+  background-color: $lightBlack;
+  .ohmyfood__p {
+    font-family: $shrikhand;
+    color: $white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .footerList {
+    margin-top: 0px;
+    list-style: none;
+    color: $white;
+    padding-left: 20px;
+    padding-bottom: 35px;
+    .footerList__element {
+      padding-bottom: 15px;
+    }
+
+    .fa-utensils {
+      color: $white;
+      padding-right: 10px;
+    }
+    .fa-hands-helping {
+      color: $white;
+      padding-right: 10px;
+    }
+  }
+}

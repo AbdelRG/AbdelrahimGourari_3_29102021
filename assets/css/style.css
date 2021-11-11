@@ -107,7 +107,7 @@ body {
 }
 .fonctionnementList__element .fa-mobile-alt {
   color: #7e7e7e;
-  margin-right: 30px;
+  margin-right: 36px;
 }
 .fonctionnementList__element .fa-list-ul {
   color: #7e7e7e;
@@ -116,6 +116,7 @@ body {
 .fonctionnementList__element .fa-store {
   color: #7e7e7e;
   margin-right: 30px;
+  width: 16px;
 }
 .fonctionnementList__element .fonctionnementList__elementP {
   font-weight: bold;
@@ -174,6 +175,39 @@ body {
   max-height: 175px;
   width: 335px;
   border-radius: 15px 15px 0px 0px;
+}
+
+footer {
+  margin-top: 0px;
+  background-color: #353535;
+}
+footer .ohmyfood__p {
+  font-family: "Shrikhand", sans-serif;
+  color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 20px;
+  margin-top: 0px;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+footer .footerList {
+  margin-top: 0px;
+  list-style: none;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-bottom: 35px;
+}
+footer .footerList .footerList__element {
+  padding-bottom: 15px;
+}
+footer .footerList .fa-utensils {
+  color: #ffffff;
+  padding-right: 10px;
+}
+footer .footerList .fa-hands-helping {
+  color: #ffffff;
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
