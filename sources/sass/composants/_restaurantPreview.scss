@@ -1,0 +1,29 @@
+.restaurantPreview {
+  .restaurantPreview__img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+    position: relative;
+  }
+  .restaurantPreview__desc {
+    border-radius: 35px 35px 0px 0px;
+    margin-top: -45px;
+    border: solid white;
+    position: relative;
+    z-index: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .fa-heart {
+      margin-right: -30px;
+      font-size: 25px;
+    }
+    .restaurantPreview__title {
+      margin-left: -50px;
+      font-size: 25px;
+      font-family: $shrikhand;
+    }
+  }
+}
