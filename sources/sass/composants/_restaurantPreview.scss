@@ -9,21 +9,18 @@
   .restaurantPreview__desc {
     border-radius: 35px 35px 0px 0px;
     margin-top: -45px;
-    border: solid white;
+    border: solid $grey;
     position: relative;
     z-index: auto;
-    background-color: white;
+    background-color: $grey;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    .fa-heart {
-      margin-right: -30px;
-      font-size: 25px;
-    }
+
     .restaurantPreview__title {
       margin-left: -50px;
       font-size: 25px;
-      font-family: $shrikhand;
+      font-family: $font-title;
     }
   }
 }

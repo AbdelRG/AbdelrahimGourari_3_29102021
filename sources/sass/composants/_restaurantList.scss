@@ -1,0 +1,16 @@
+.restaurantList {
+  margin-top: 60px;
+  background-color: $grey;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    padding-top: 50px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-left: -225px;
+    font-size: 25px;
+  }
+}
