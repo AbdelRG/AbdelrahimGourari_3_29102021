@@ -30,8 +30,23 @@
   .restaurantCard__img {
     object-fit: cover;
     max-height: 175px;
-
+    position: relative;
     width: 335px;
     border-radius: 15px 15px 0px 0px;
+  }
+  .restaurantCard__new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $darkGreen;
+    font-size: 14px;
+    width: 80px;
+    height: 30px;
+    background-color: $colour-tertiary;
+    position: relative;
+    z-index: auto;
+    margin-top: -160px;
+    margin-left: 240px;
+    margin-bottom: 130px;
   }
 }

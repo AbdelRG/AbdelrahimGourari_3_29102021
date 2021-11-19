@@ -23,9 +23,6 @@ header .Ohmyfood__logo {
   margin-left: 50%;
   margin-right: 50%;
 }
-header .menuHeading__link .fa-arrow-left {
-  color: black;
-}
 
 footer {
   margin-top: 0px;
@@ -87,11 +84,25 @@ footer .footerList .footerList__element {
 .icon__heartCard {
   margin-right: 15px;
   font-size: 25px;
+  transition: all 2s ease-out;
+  cursor: pointer;
+}
+.icon__heartCard:hover {
+  color: #cf6adb;
 }
 
 .icon__heartPreview {
   margin-right: -30px;
   font-size: 25px;
+  transition: all 2s ease-out;
+  cursor: pointer;
+}
+.icon__heartPreview:hover {
+  color: #cf6adb;
+}
+
+.icon__arrow {
+  color: black;
 }
 
 .restaurantList {
@@ -144,6 +155,7 @@ footer .footerList .footerList__element {
 
 .button-purple {
   border-radius: 25px 25px 25px 25px;
+  box-shadow: 1px 1px 8px 1px silver;
   color: #ffffff;
   background: linear-gradient(#ff79da, #9356dc);
   min-height: 50px;
@@ -153,6 +165,12 @@ footer .footerList .footerList__element {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 16px;
+  cursor: pointer;
+  transition: all 2s ease-out;
+}
+.button-purple:hover {
+  opacity: 0.9;
+  box-shadow: 2px 2px 15px 2px black;
 }
 
 /**
@@ -188,6 +206,18 @@ footer .footerList .footerList__element {
   min-width: 325px;
   margin-right: 20px;
   margin-left: 25px;
+}
+.fonctionnementList__element:hover {
+  background-color: #f5edff;
+}
+.fonctionnementList__element:hover .icon__mobile {
+  color: #9356dc;
+}
+.fonctionnementList__element:hover .icon__store {
+  color: #9356dc;
+}
+.fonctionnementList__element:hover .icon__list {
+  color: #9356dc;
 }
 .fonctionnementList__elementNumber {
   display: flex;
@@ -236,8 +266,24 @@ footer .footerList .footerList__element {
 .restaurantCard .restaurantCard__img {
   object-fit: cover;
   max-height: 175px;
+  position: relative;
   width: 335px;
   border-radius: 15px 15px 0px 0px;
+}
+.restaurantCard .restaurantCard__new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #008766;
+  font-size: 14px;
+  width: 80px;
+  height: 30px;
+  background-color: #99e2d0;
+  position: relative;
+  z-index: auto;
+  margin-top: -160px;
+  margin-left: 240px;
+  margin-bottom: 130px;
 }
 
 .restaurantPreview .restaurantPreview__img {
@@ -318,6 +364,13 @@ footer .footerList .footerList__element {
   justify-content: center;
   margin-top: 35px;
   padding-bottom: 80px;
+}
+
+.link {
+  text-decoration: none;
+}
+.link:visited {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

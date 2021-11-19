@@ -29,9 +29,23 @@
 .icon__heartCard {
   margin-right: 15px;
   font-size: 25px;
+  transition: all 2s ease-out;
+  cursor: pointer;
+  &:hover {
+    color: $colour-heart;
+  }
 }
 
 .icon__heartPreview {
   margin-right: -30px;
   font-size: 25px;
+  transition: all 2s ease-out;
+  cursor: pointer;
+  &:hover {
+    color: $colour-heart;
+  }
+}
+
+.icon__arrow {
+  color: black;
 }

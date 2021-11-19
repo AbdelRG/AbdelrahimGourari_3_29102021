@@ -33,6 +33,18 @@
     min-width: 325px;
     margin-right: 20px;
     margin-left: 25px;
+    &:hover {
+      background-color: $lightPurple;
+      .icon__mobile {
+        color: $colour-primary;
+      }
+      .icon__store {
+        color: $colour-primary;
+      }
+      .icon__list {
+        color: $colour-primary;
+      }
+    }
   }
   &__elementNumber {
     display: flex;
