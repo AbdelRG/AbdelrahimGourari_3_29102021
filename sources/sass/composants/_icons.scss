@@ -12,18 +12,11 @@
   color: $white;
   padding-right: 10px;
 }
-.icon__mobile {
-  color: $iconGrey;
-  margin-right: 36px;
-}
-.icon__list {
+
+.icon__element {
   color: $iconGrey;
   margin-right: 30px;
-}
-.icon__store {
-  color: $iconGrey;
-  margin-right: 30px;
-  width: 16px;
+  width: 20px;
 }
 
 .icon__heartCard {
@@ -37,7 +30,7 @@
 }
 
 .icon__heartPreview {
-  margin-right: -30px;
+  margin-right: 40px;
   font-size: 25px;
   transition: all 2s ease-out;
   cursor: pointer;

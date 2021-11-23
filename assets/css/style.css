@@ -10,6 +10,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0px;
 }
 
 header {
@@ -20,8 +21,7 @@ header {
 header .Ohmyfood__logo {
   width: 50%;
   height: 50%;
-  margin-left: 50%;
-  margin-right: 50%;
+  margin-top: 25px;
 }
 
 footer {
@@ -65,20 +65,10 @@ footer .footerList .footerList__element {
   padding-right: 10px;
 }
 
-.icon__mobile {
-  color: #7e7e7e;
-  margin-right: 36px;
-}
-
-.icon__list {
+.icon__element {
   color: #7e7e7e;
   margin-right: 30px;
-}
-
-.icon__store {
-  color: #7e7e7e;
-  margin-right: 30px;
-  width: 16px;
+  width: 20px;
 }
 
 .icon__heartCard {
@@ -92,7 +82,7 @@ footer .footerList .footerList__element {
 }
 
 .icon__heartPreview {
-  margin-right: -30px;
+  margin-right: 40px;
   font-size: 25px;
   transition: all 2s ease-out;
   cursor: pointer;
@@ -210,13 +200,7 @@ footer .footerList .footerList__element {
 .fonctionnementList__element:hover {
   background-color: #f5edff;
 }
-.fonctionnementList__element:hover .icon__mobile {
-  color: #9356dc;
-}
-.fonctionnementList__element:hover .icon__store {
-  color: #9356dc;
-}
-.fonctionnementList__element:hover .icon__list {
+.fonctionnementList__element:hover .icon__element {
   color: #9356dc;
 }
 .fonctionnementList__elementNumber {
@@ -295,25 +279,27 @@ footer .footerList .footerList__element {
 }
 .restaurantPreview .restaurantPreview__desc {
   border-radius: 35px 35px 0px 0px;
-  margin-top: -45px;
+  margin-top: -13%;
   border: solid #f6f6f6;
   position: relative;
   z-index: auto;
   background-color: #f6f6f6;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .restaurantPreview .restaurantPreview__desc .restaurantPreview__title {
-  margin-left: -50px;
+  margin-left: 20px;
   font-size: 25px;
   font-family: "Shrikhand", sans-serif;
 }
 
 .dishesList__title {
   margin-bottom: 8px;
+  margin-left: 20px;
 }
 .dishesList__title__borderLength {
+  margin-left: 20px;
   width: 40px;
   height: 0px;
   margin-top: 0px;
@@ -329,7 +315,7 @@ footer .footerList .footerList__element {
   max-height: 68px;
   margin-bottom: 15px;
   background-color: #ffffff;
-  margin-left: 5px;
+  margin-left: 15px;
   margin-right: 15px;
   min-width: 350px;
 }
@@ -368,6 +354,7 @@ footer .footerList .footerList__element {
 
 .link {
   text-decoration: none;
+  color: black;
 }
 .link:visited {
   color: black;

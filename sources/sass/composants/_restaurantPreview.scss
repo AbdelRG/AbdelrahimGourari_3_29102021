@@ -8,17 +8,17 @@
   }
   .restaurantPreview__desc {
     border-radius: 35px 35px 0px 0px;
-    margin-top: -45px;
+    margin-top: -13%;
     border: solid $grey;
     position: relative;
     z-index: auto;
     background-color: $grey;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .restaurantPreview__title {
-      margin-left: -50px;
+      margin-left: 20px;
       font-size: 25px;
       font-family: $font-title;
     }

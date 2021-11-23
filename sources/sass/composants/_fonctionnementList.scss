@@ -35,13 +35,7 @@
     margin-left: 25px;
     &:hover {
       background-color: $lightPurple;
-      .icon__mobile {
-        color: $colour-primary;
-      }
-      .icon__store {
-        color: $colour-primary;
-      }
-      .icon__list {
+      .icon__element {
         color: $colour-primary;
       }
     }
