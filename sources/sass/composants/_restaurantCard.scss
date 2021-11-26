@@ -9,17 +9,25 @@
   min-height: 252px;
   display: flex;
   flex-direction: column;
+
   .restaurantCard__caption {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+    .restaurantCard__heart {
+      order: 2;
+      width: 50px;
+      display: flex;
+    }
 
     .restaurantCard__info {
       margin-left: 15px;
+      order: 1;
       .restaurantCard__desc {
         margin: 2px;
         font-weight: bold;
+        order: 1;
       }
 
       .restaurantCard__localisation {
@@ -30,7 +38,7 @@
   .restaurantCard__img {
     object-fit: cover;
     max-height: 175px;
-    position: relative;
+
     width: 335px;
     border-radius: 15px 15px 0px 0px;
   }

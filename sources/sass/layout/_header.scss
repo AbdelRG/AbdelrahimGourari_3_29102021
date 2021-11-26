@@ -2,10 +2,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-top: 25px;
   .Ohmyfood__logo {
     width: 50%;
     height: 50%;
-    margin-top: 25px;
+  }
+  .menuHeading__link {
+    text-decoration: none;
+    color: black;
+    &:visited {
+      color: black;
+    }
   }
 }

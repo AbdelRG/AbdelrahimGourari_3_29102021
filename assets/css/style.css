@@ -17,11 +17,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 25px;
 }
 header .Ohmyfood__logo {
   width: 50%;
   height: 50%;
-  margin-top: 25px;
+}
+header .menuHeading__link {
+  text-decoration: none;
+  color: black;
+}
+header .menuHeading__link:visited {
+  color: black;
 }
 
 footer {
@@ -72,13 +79,28 @@ footer .footerList .footerList__element {
 }
 
 .icon__heartCard {
-  margin-right: 15px;
   font-size: 25px;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
   cursor: pointer;
+  opacity: 1;
 }
 .icon__heartCard:hover {
-  color: #cf6adb;
+  opacity: 0;
+}
+
+.icon__heartCard__full {
+  font-size: 25px;
+  margin-left: -25px;
+  opacity: 0;
+  transition: all 2s ease-out;
+  cursor: pointer;
+  color: #ffffff;
+}
+.icon__heartCard__full:hover {
+  opacity: 1;
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .icon__heartPreview {
@@ -93,6 +115,8 @@ footer .footerList .footerList__element {
 
 .icon__arrow {
   color: black;
+  margin-left: -65px;
+  font-size: 20px;
 }
 
 .restaurantList {
@@ -237,12 +261,19 @@ footer .footerList .footerList__element {
   justify-content: space-between;
   margin-top: 20px;
 }
+.restaurantCard .restaurantCard__caption .restaurantCard__heart {
+  order: 2;
+  width: 50px;
+  display: flex;
+}
 .restaurantCard .restaurantCard__caption .restaurantCard__info {
   margin-left: 15px;
+  order: 1;
 }
 .restaurantCard .restaurantCard__caption .restaurantCard__info .restaurantCard__desc {
   margin: 2px;
   font-weight: bold;
+  order: 1;
 }
 .restaurantCard .restaurantCard__caption .restaurantCard__info .restaurantCard__localisation {
   margin: 2px;
@@ -250,7 +281,6 @@ footer .footerList .footerList__element {
 .restaurantCard .restaurantCard__img {
   object-fit: cover;
   max-height: 175px;
-  position: relative;
   width: 335px;
   border-radius: 15px 15px 0px 0px;
 }
@@ -271,15 +301,17 @@ footer .footerList .footerList__element {
 }
 
 .restaurantPreview .restaurantPreview__img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 300px;
   display: block;
   margin-top: 15px;
   position: relative;
+  max-height: 350px;
+  object-fit: cover;
 }
 .restaurantPreview .restaurantPreview__desc {
   border-radius: 35px 35px 0px 0px;
-  margin-top: -13%;
+  margin-top: -40px;
   border: solid #f6f6f6;
   position: relative;
   z-index: auto;
@@ -318,6 +350,15 @@ footer .footerList .footerList__element {
   margin-left: 15px;
   margin-right: 15px;
   min-width: 350px;
+}
+.dishesList__element:hover {
+  overflow: hidden;
+}
+.dishesList__element:hover__animation {
+  background-color: #99e2d0;
+  transform: translateX(10px);
+  transition: transform 2s ease-out;
+  width: 50px;
 }
 .dishesList__element__caption {
   display: flex;
