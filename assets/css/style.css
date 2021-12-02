@@ -119,6 +119,14 @@ footer .footerList .footerList__element {
   font-size: 20px;
 }
 
+.icon__cercle {
+  color: #99e2d0;
+  -webkit-text-fill-color: white;
+  -webkit-background-clip: text;
+  background-color: white;
+  font-size: 20px;
+}
+
 .restaurantList {
   margin-top: 60px;
   background-color: #f6f6f6;
@@ -343,30 +351,23 @@ footer .footerList .footerList__element {
   box-shadow: 1px 1px 8px 1px silver;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   max-height: 68px;
   margin-bottom: 15px;
   background-color: #ffffff;
   margin-left: 15px;
   margin-right: 15px;
   min-width: 350px;
-}
-.dishesList__element:hover {
   overflow: hidden;
-}
-.dishesList__element:hover__animation {
-  background-color: #99e2d0;
-  transform: translateX(10px);
-  transition: transform 2s ease-out;
-  width: 50px;
+  align-items: stretch;
 }
 .dishesList__element__caption {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
   padding-top: 10px;
-  max-height: 68px;
+  text-overflow: ellipsis;
   justify-content: center;
+  flex-grow: 1;
 }
 .dishesList__element__title {
   margin-bottom: 5px;
@@ -378,8 +379,28 @@ footer .footerList .footerList__element {
   padding-bottom: 10px;
 }
 .dishesList__element__price {
-  margin-right: 20px;
   margin-bottom: 10px;
+  margin-right: -35px;
+  align-self: flex-end;
+}
+.dishesList__element__animation {
+  background-color: #99e2d0;
+  transform: translateX(60px);
+  transition: all 200ms ease-out;
+  width: 60px;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.dishesList__element:hover .dishesList__element__animation {
+  transform: translateX(0px);
+  margin-left: 55px;
+  transition: all 200ms ease-out;
+}
+.dishesList__element:hover .icon__cercle {
+  transform: translateX(-20px) rotate(360deg);
+  transition: all 700ms ease-out;
 }
 
 .restaurantsAttach {
