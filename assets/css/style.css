@@ -65,6 +65,7 @@ footer .footerList .footerList__element {
 .icon__ustensil {
   color: #ffffff;
   padding-right: 10px;
+  width: 30px;
 }
 
 .icon__helping {
@@ -361,22 +362,27 @@ footer .footerList .footerList__element {
   align-items: stretch;
 }
 .dishesList__element1__caption, .dishesList__element2__caption, .dishesList__element3__caption {
-  display: flex;
-  flex-direction: column;
   margin-left: 10px;
-  padding-top: 10px;
-  text-overflow: ellipsis;
   justify-content: center;
+  text-overflow: ellipsis;
   flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  justify-content: center;
 }
 .dishesList__element1__title, .dishesList__element2__title, .dishesList__element3__title {
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 18px;
+  margin-top: 10px;
 }
 .dishesList__element1__desc, .dishesList__element2__desc, .dishesList__element3__desc {
   margin-top: 0px;
   padding-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .dishesList__element1__price, .dishesList__element2__price, .dishesList__element3__price {
   margin-bottom: 10px;
@@ -392,6 +398,7 @@ footer .footerList .footerList__element {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-shrink: 0;
 }
 .dishesList__element1:hover .dishesList__element1__animation, .dishesList__element1:hover .dishesList__element2__animation, .dishesList__element1:hover .dishesList__element3__animation, .dishesList__element2:hover .dishesList__element1__animation, .dishesList__element2:hover .dishesList__element2__animation, .dishesList__element2:hover .dishesList__element3__animation, .dishesList__element3:hover .dishesList__element1__animation, .dishesList__element3:hover .dishesList__element2__animation, .dishesList__element3:hover .dishesList__element3__animation {
   transform: translateX(0px);
