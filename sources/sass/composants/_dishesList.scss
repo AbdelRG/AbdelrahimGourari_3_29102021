@@ -11,9 +11,7 @@
       border-bottom: 3px solid $colour-tertiary;
     }
   }
-  &__element1,
-  &__element2,
-  &__element3 {
+  &__element {
     border-radius: 15px 15px 15px 15px;
     box-shadow: 1px 1px 8px 1px silver;
     display: flex;
@@ -79,14 +77,81 @@
       transition: all 700ms ease-out;
     }
   }
-  &__element1 {
-    -webkit-animation: fadein 1s;
+
+  &__element {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 8px 1px silver;
+    display: flex;
+    justify-content: space-between;
+
+    max-height: 68px;
+    margin-bottom: 15px;
+    background-color: $white;
+    margin-left: 15px;
+    margin-right: 15px;
+    min-width: 350px;
+    overflow: hidden;
+
+    align-items: stretch;
+
+    &__caption {
+      margin-left: 10px;
+      justify-content: center;
+      text-overflow: ellipsis;
+      flex-grow: 1;
+      flex-shrink: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      justify-content: center;
+    }
+    &__title {
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    &__desc {
+      margin-top: 0px;
+      padding-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &__price {
+      margin-bottom: 10px;
+      margin-right: -35px;
+      align-self: flex-end;
+    }
+    &__animation {
+      background-color: $colour-tertiary;
+      transform: translateX(60px);
+      transition: all 200ms ease-out;
+      width: 60px;
+      height: 70px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    &:hover &__animation {
+      transform: translateX(0px);
+      margin-left: 55px;
+      transition: all 200ms ease-out;
+    }
+    &:hover .icon__cercle {
+      transform: translateX(-20px) rotate(360deg);
+      transition: all 700ms ease-out;
+    }
   }
-  &__element2 {
-    -webkit-animation: fadein 2s;
+  &__element:nth-of-type(2) {
+    -webkit-animation: fadein 2s, slide 2s;
   }
-  &__element3 {
-    -webkit-animation: fadein 3s;
+  &__element:nth-of-type(3) {
+    -webkit-animation: fadein 3s, slide 3s;
+  }
+  &__element:nth-of-type(4) {
+    -webkit-animation: fadein 4s, slide 4s;
   }
 }
 
@@ -96,5 +161,13 @@
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes slide {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0px);
   }
 }

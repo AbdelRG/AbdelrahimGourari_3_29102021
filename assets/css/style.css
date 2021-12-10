@@ -81,19 +81,19 @@ footer .footerList .footerList__element {
 
 .icon__heartCard {
   font-size: 25px;
-  transition: all 1s ease-out;
+  transition: color 200ms ease-out;
   cursor: pointer;
-  opacity: 1;
+  color: black;
 }
 .icon__heartCard:hover {
-  opacity: 0;
+  color: white;
 }
 
 .icon__heartCard__full {
   font-size: 25px;
   margin-left: -25px;
   opacity: 0;
-  transition: all 2s ease-out;
+  transition: opacity 2s ease-out;
   cursor: pointer;
   color: #ffffff;
 }
@@ -107,11 +107,11 @@ footer .footerList .footerList__element {
 .icon__heartPreview {
   margin-right: 40px;
   font-size: 25px;
-  transition: all 2s ease-out;
+  transition: color 2s ease-out;
   cursor: pointer;
 }
 .icon__heartPreview:hover {
-  color: #cf6adb;
+  color: white;
 }
 
 .icon__arrow {
@@ -347,7 +347,7 @@ footer .footerList .footerList__element {
   margin-bottom: 15px;
   border-bottom: 3px solid #99e2d0;
 }
-.dishesList__element1, .dishesList__element2, .dishesList__element3 {
+.dishesList__element {
   border-radius: 15px 15px 15px 15px;
   box-shadow: 1px 1px 8px 1px silver;
   display: flex;
@@ -361,7 +361,7 @@ footer .footerList .footerList__element {
   overflow: hidden;
   align-items: stretch;
 }
-.dishesList__element1__caption, .dishesList__element2__caption, .dishesList__element3__caption {
+.dishesList__element__caption {
   margin-left: 10px;
   justify-content: center;
   text-overflow: ellipsis;
@@ -372,24 +372,24 @@ footer .footerList .footerList__element {
   white-space: nowrap;
   justify-content: center;
 }
-.dishesList__element1__title, .dishesList__element2__title, .dishesList__element3__title {
+.dishesList__element__title {
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 18px;
   margin-top: 10px;
 }
-.dishesList__element1__desc, .dishesList__element2__desc, .dishesList__element3__desc {
+.dishesList__element__desc {
   margin-top: 0px;
   padding-bottom: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.dishesList__element1__price, .dishesList__element2__price, .dishesList__element3__price {
+.dishesList__element__price {
   margin-bottom: 10px;
   margin-right: -35px;
   align-self: flex-end;
 }
-.dishesList__element1__animation, .dishesList__element2__animation, .dishesList__element3__animation {
+.dishesList__element__animation {
   background-color: #99e2d0;
   transform: translateX(60px);
   transition: all 200ms ease-out;
@@ -400,23 +400,85 @@ footer .footerList .footerList__element {
   align-items: center;
   flex-shrink: 0;
 }
-.dishesList__element1:hover .dishesList__element1__animation, .dishesList__element1:hover .dishesList__element2__animation, .dishesList__element1:hover .dishesList__element3__animation, .dishesList__element2:hover .dishesList__element1__animation, .dishesList__element2:hover .dishesList__element2__animation, .dishesList__element2:hover .dishesList__element3__animation, .dishesList__element3:hover .dishesList__element1__animation, .dishesList__element3:hover .dishesList__element2__animation, .dishesList__element3:hover .dishesList__element3__animation {
+.dishesList__element:hover .dishesList__element__animation {
   transform: translateX(0px);
   margin-left: 55px;
   transition: all 200ms ease-out;
 }
-.dishesList__element1:hover .icon__cercle, .dishesList__element2:hover .icon__cercle, .dishesList__element3:hover .icon__cercle {
+.dishesList__element:hover .icon__cercle {
   transform: translateX(-20px) rotate(360deg);
   transition: all 700ms ease-out;
 }
-.dishesList__element1 {
-  -webkit-animation: fadein 1s;
+.dishesList__element {
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 1px 1px 8px 1px silver;
+  display: flex;
+  justify-content: space-between;
+  max-height: 68px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  margin-left: 15px;
+  margin-right: 15px;
+  min-width: 350px;
+  overflow: hidden;
+  align-items: stretch;
 }
-.dishesList__element2 {
-  -webkit-animation: fadein 2s;
+.dishesList__element__caption {
+  margin-left: 10px;
+  justify-content: center;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  justify-content: center;
 }
-.dishesList__element3 {
-  -webkit-animation: fadein 3s;
+.dishesList__element__title {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.dishesList__element__desc {
+  margin-top: 0px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dishesList__element__price {
+  margin-bottom: 10px;
+  margin-right: -35px;
+  align-self: flex-end;
+}
+.dishesList__element__animation {
+  background-color: #99e2d0;
+  transform: translateX(60px);
+  transition: all 200ms ease-out;
+  width: 60px;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+}
+.dishesList__element:hover .dishesList__element__animation {
+  transform: translateX(0px);
+  margin-left: 55px;
+  transition: all 200ms ease-out;
+}
+.dishesList__element:hover .icon__cercle {
+  transform: translateX(-20px) rotate(360deg);
+  transition: all 700ms ease-out;
+}
+.dishesList__element:nth-of-type(2) {
+  -webkit-animation: fadein 2s, slide 2s;
+}
+.dishesList__element:nth-of-type(3) {
+  -webkit-animation: fadein 3s, slide 3s;
+}
+.dishesList__element:nth-of-type(4) {
+  -webkit-animation: fadein 4s, slide 4s;
 }
 
 @-webkit-keyframes fadein {
@@ -425,6 +487,14 @@ footer .footerList .footerList__element {
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes slide {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0px);
   }
 }
 .restaurantsAttach {
@@ -444,6 +514,10 @@ footer .footerList .footerList__element {
 }
 .link:visited {
   color: black;
+}
+
+.index__body {
+  -webkit-animation: fadein 2s, slide 2s;
 }
 
 /*# sourceMappingURL=style.css.map */
