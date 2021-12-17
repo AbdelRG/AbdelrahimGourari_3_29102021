@@ -30,11 +30,14 @@
 
         <div class="restaurantPreview__desc">
           <h1 class="restaurantPreview__title">A la francaise</h1>
-          <i class="far fa-heart icon__heartPreview"></i>
+          <div class="restaurantPreview__heart">
+            <i class="far fa-heart icon__heartPreview"></i>
+            <i class="fas fa-heart icon__heartPreview__full"></i>
+          </div>
         </div>
       </div>
       <div class="dishesList">
-        <h4 class="dishesList__title">ENTREES</h4>
+        <p class="dishesList__title">ENTREES</p>
         <div class="dishesList__title__borderLength"></div>
         <div class="dishesList__element">
           <div class="dishesList__element__caption">
@@ -69,7 +72,7 @@
         </div>
       </div>
       <div class="dishesList">
-        <h4 class="dishesList__title">PLATS</h4>
+        <p class="dishesList__title">PLATS</p>
         <div class="dishesList__title__borderLength"></div>
         <div class="dishesList__element">
           <div class="dishesList__element__caption">
@@ -111,7 +114,7 @@
         </div>
       </div>
       <div class="dishesList">
-        <h4 class="dishesList__title">DESSERTS</h4>
+        <p class="dishesList__title">DESSERTS</p>
         <div class="dishesList__title__borderLength"></div>
         <div class="dishesList__element">
           <div class="dishesList__element__caption">
@@ -160,7 +163,9 @@
           <i class="fas fa-hands-helping icon__helping"></i>Devenir partenaire
         </li>
         <li class="footerList__element">Mentions légales</li>
-        <li class="footerList__element">Contact</li>
+        <a class="link__footer" href="mailto:ohmyfood@exemple.com"
+          ><li class="footerList__element">Contact</li></a
+        >
       </ul>
     </footer>
     <script

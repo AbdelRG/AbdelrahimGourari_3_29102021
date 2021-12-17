@@ -30,22 +30,6 @@
   }
 }
 
-.icon__heartCard__full {
-  font-size: 25px;
-  margin-left: -25px;
-  opacity: 0;
-  transition: opacity 2s ease-out;
-  cursor: pointer;
-  color: $white;
-
-  &:hover {
-    opacity: 1;
-    background: linear-gradient($colour-secondary, $colour-primary);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-}
-
 .icon__heartPreview {
   margin-right: 40px;
   font-size: 25px;

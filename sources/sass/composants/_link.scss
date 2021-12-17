@@ -5,3 +5,10 @@
     color: black;
   }
 }
+.link__footer {
+  text-decoration: none;
+  color: white;
+  &:visted {
+    color: white;
+  }
+}

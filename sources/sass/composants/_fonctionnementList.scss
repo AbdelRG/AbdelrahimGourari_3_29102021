@@ -21,6 +21,7 @@
     font-size: 25px;
     margin-top: 50px;
     margin-bottom: 35px;
+    font-weight: bold;
   }
   &__element {
     display: flex;
@@ -30,7 +31,7 @@
     align-items: center;
     margin-bottom: 20px;
     border-radius: 18px 18px 18px 18px;
-    min-width: 325px;
+
     margin-right: 20px;
     margin-left: 25px;
     &:hover {

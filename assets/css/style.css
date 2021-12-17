@@ -13,6 +13,14 @@ body {
   margin: 0px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Shrikhand", sans-serif;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -22,6 +30,7 @@ header {
 header .Ohmyfood__logo {
   width: 50%;
   height: 50%;
+  max-width: 320px;
 }
 header .menuHeading__link {
   text-decoration: none;
@@ -89,21 +98,6 @@ footer .footerList .footerList__element {
   color: white;
 }
 
-.icon__heartCard__full {
-  font-size: 25px;
-  margin-left: -25px;
-  opacity: 0;
-  transition: opacity 2s ease-out;
-  cursor: pointer;
-  color: #ffffff;
-}
-.icon__heartCard__full:hover {
-  opacity: 1;
-  background: linear-gradient(#ff79da, #9356dc);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
 .icon__heartPreview {
   margin-right: 40px;
   font-size: 25px;
@@ -141,8 +135,9 @@ footer .footerList .footerList__element {
   padding-left: 20px;
   margin-bottom: 15px;
   margin-top: 0px;
-  margin-left: -225px;
+  width: 100%;
   font-size: 25px;
+  font-weight: bold;
 }
 
 .restaurantSearch .restaurantSearch__localisation {
@@ -165,6 +160,10 @@ footer .footerList .footerList__element {
 .restaurantSearch .restaurantSearch__description .restaurantSearch__title {
   text-align: center;
   margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .restaurantSearch .restaurantSearch__description .restaurantSearch__p2 {
   text-align: center;
@@ -193,7 +192,7 @@ footer .footerList .footerList__element {
 }
 .button-purple:hover {
   opacity: 0.9;
-  box-shadow: 2px 2px 15px 2px black;
+  box-shadow: 2px 20px 2px 2px silver;
 }
 
 /**
@@ -217,6 +216,7 @@ footer .footerList .footerList__element {
   font-size: 25px;
   margin-top: 50px;
   margin-bottom: 35px;
+  font-weight: bold;
 }
 .fonctionnementList__element {
   display: flex;
@@ -226,7 +226,6 @@ footer .footerList .footerList__element {
   align-items: center;
   margin-bottom: 20px;
   border-radius: 18px 18px 18px 18px;
-  min-width: 325px;
   margin-right: 20px;
   margin-left: 25px;
 }
@@ -252,28 +251,58 @@ footer .footerList .footerList__element {
   font-weight: bold;
 }
 
+.restaurantCard__container {
+  height: auto;
+  width: 85%;
+  margin-bottom: 20px;
+}
+
 .restaurantCard {
   border-radius: 15px 15px 15px 15px;
   box-shadow: 1px 1px 8px 1px silver;
-  max-width: 335px;
-  margin-left: 15px;
-  margin-right: 20px;
-  max-height: 252px;
-  min-width: 335px;
-  min-height: 252px;
+  margin: 0px;
+  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 0;
 }
 .restaurantCard .restaurantCard__caption {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .restaurantCard .restaurantCard__caption .restaurantCard__heart {
   order: 2;
   width: 50px;
   display: flex;
+  transition: opacity 3s ease-out;
+  cursor: pointer;
+}
+.restaurantCard .restaurantCard__caption .restaurantCard__heart:hover .icon__heartCard__full {
+  opacity: 1;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.restaurantCard .restaurantCard__caption .restaurantCard__heart .icon__heartCard__full {
+  font-size: 25px;
+  margin-left: -25px;
+  opacity: 0;
+  transition: opacity 2s ease-out;
+  color: white;
+}
+.restaurantCard .restaurantCard__caption .restaurantCard__heart .icon__heartCard {
+  font-size: 25px;
+  transition: color 200ms ease-out;
+  cursor: pointer;
+  color: black;
+}
+.restaurantCard .restaurantCard__caption .restaurantCard__heart:hover .icon__heartCard {
+  color: white;
 }
 .restaurantCard .restaurantCard__caption .restaurantCard__info {
   margin-left: 15px;
@@ -290,7 +319,6 @@ footer .footerList .footerList__element {
 .restaurantCard .restaurantCard__img {
   object-fit: cover;
   max-height: 175px;
-  width: 335px;
   border-radius: 15px 15px 0px 0px;
 }
 .restaurantCard .restaurantCard__new {
@@ -302,11 +330,10 @@ footer .footerList .footerList__element {
   width: 80px;
   height: 30px;
   background-color: #99e2d0;
-  position: relative;
-  z-index: auto;
-  margin-top: -160px;
-  margin-left: 240px;
-  margin-bottom: 130px;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 15px;
 }
 
 .restaurantPreview .restaurantPreview__img {
@@ -334,6 +361,34 @@ footer .footerList .footerList__element {
   font-size: 25px;
   font-family: "Shrikhand", sans-serif;
 }
+.restaurantPreview .restaurantPreview__heart {
+  width: 50px;
+  display: flex;
+  transition: opacity 3s ease-out;
+  cursor: pointer;
+}
+.restaurantPreview .restaurantPreview__heart:hover .icon__heartPreview__full {
+  opacity: 1;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.restaurantPreview .restaurantPreview__heart .icon__heartPreview__full {
+  font-size: 25px;
+  margin-left: -65px;
+  opacity: 0;
+  transition: opacity 2s ease-out;
+  color: white;
+}
+.restaurantPreview .restaurantPreview__heart .icon__heartPreview {
+  font-size: 25px;
+  transition: color 200ms ease-out;
+  cursor: pointer;
+  color: black;
+}
+.restaurantPreview .restaurantPreview__heart:hover .icon__heartPreview {
+  color: white;
+}
 
 .dishesList__title {
   margin-bottom: 8px;
@@ -357,7 +412,6 @@ footer .footerList .footerList__element {
   background-color: #ffffff;
   margin-left: 15px;
   margin-right: 15px;
-  min-width: 350px;
   overflow: hidden;
   align-items: stretch;
 }
@@ -419,7 +473,7 @@ footer .footerList .footerList__element {
   background-color: #ffffff;
   margin-left: 15px;
   margin-right: 15px;
-  min-width: 350px;
+  opacity: 0;
   overflow: hidden;
   align-items: stretch;
 }
@@ -472,13 +526,20 @@ footer .footerList .footerList__element {
   transition: all 700ms ease-out;
 }
 .dishesList__element:nth-of-type(2) {
-  -webkit-animation: fadein 2s, slide 2s;
+  animation: fadein 1s ease 300ms forwards, slide 1s ease 300ms forwards;
+  -webkit-animation: fadein 1s ease 300ms forwards, slide 1s ease 300ms forwards;
 }
 .dishesList__element:nth-of-type(3) {
-  -webkit-animation: fadein 3s, slide 3s;
+  animation: fadein 1s ease 600ms forwards, slide 1s ease 600ms forwards;
+  -webkit-animation: fadein 1s ease 600ms forwards, slide 1s ease 600ms forwards;
 }
 .dishesList__element:nth-of-type(4) {
-  -webkit-animation: fadein 4s, slide 4s;
+  animation: fadein 1s ease 900ms forwards, slide 1s ease 900ms forwards;
+  -webkit-animation: fadein 1s ease 900ms forwards, slide 1s ease 900ms forwards;
+}
+.dishesList__element:nth-of-type(5) {
+  animation: fadein 1s ease 1200ms forwards, slide 1s ease 1200ms forwards;
+  -webkit-animation: fadein 1s ease 1200ms forwards, slide 1s ease 1200ms forwards;
 }
 
 @-webkit-keyframes fadein {
@@ -486,6 +547,14 @@ footer .footerList .footerList__element {
     opacity: 0;
   }
   to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -516,8 +585,70 @@ footer .footerList .footerList__element {
   color: black;
 }
 
+.link__footer {
+  text-decoration: none;
+  color: white;
+}
+.link__footer:visted {
+  color: white;
+}
+
 .index__body {
-  -webkit-animation: fadein 2s, slide 2s;
+  position: relative;
+  z-index: 0;
+  -webkit-animation: fadein 5s;
+  animation: fadein 5s;
+}
+.index__body .loadingSpinner {
+  font-family: "Shrikhand", sans-serif;
+  color: #9356dc;
+  font-size: 50px;
+  width: 100%;
+  position: sticky;
+  top: 50px;
+  z-index: 1;
+  opacity: 0;
+  -webkit-animation: spin 2000ms, fadeout 2001ms;
+  animation: spin 2001ms, fadeout 2001ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotate 0deg;
+  }
+  to {
+    transform: rotate 360deg;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

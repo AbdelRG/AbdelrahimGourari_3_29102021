@@ -25,4 +25,34 @@
       font-family: $font-title;
     }
   }
+  .restaurantPreview__heart {
+    width: 50px;
+    display: flex;
+    transition: opacity 3s ease-out;
+    cursor: pointer;
+
+    &:hover .icon__heartPreview__full {
+      opacity: 1;
+      background: linear-gradient($colour-primary, $colour-secondary);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    .icon__heartPreview__full {
+      font-size: 25px;
+      margin-left: -65px;
+      opacity: 0;
+      transition: opacity 2s ease-out;
+      color: white;
+    }
+    .icon__heartPreview {
+      font-size: 25px;
+      transition: color 200ms ease-out;
+      cursor: pointer;
+      color: black;
+    }
+    &:hover .icon__heartPreview {
+      color: white;
+    }
+  }
 }
