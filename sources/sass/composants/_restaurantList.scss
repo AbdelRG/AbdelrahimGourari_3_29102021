@@ -3,8 +3,10 @@
   background-color: $grey;
   padding-bottom: 60px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-around;
   &__title {
     padding-top: 50px;
     padding-left: 20px;

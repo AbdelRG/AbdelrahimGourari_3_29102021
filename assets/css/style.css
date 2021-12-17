@@ -127,8 +127,10 @@ footer .footerList .footerList__element {
   background-color: #f6f6f6;
   padding-bottom: 60px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-around;
 }
 .restaurantList__title {
   padding-top: 50px;
@@ -188,7 +190,7 @@ footer .footerList .footerList__element {
   padding-bottom: 10px;
   font-size: 16px;
   cursor: pointer;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 .button-purple:hover {
   opacity: 0.9;
@@ -255,6 +257,7 @@ footer .footerList .footerList__element {
   height: auto;
   width: 85%;
   margin-bottom: 20px;
+  max-width: 400px;
 }
 
 .restaurantCard {
@@ -584,6 +587,9 @@ footer .footerList .footerList__element {
 .link:visited {
   color: black;
 }
+.link:visited .restaurantCard__new {
+  display: none;
+}
 
 .link__footer {
   text-decoration: none;
@@ -605,7 +611,7 @@ footer .footerList .footerList__element {
   font-size: 50px;
   width: 100%;
   position: sticky;
-  top: 50px;
+  top: 300px;
   z-index: 1;
   opacity: 0;
   -webkit-animation: spin 2000ms, fadeout 2001ms;
