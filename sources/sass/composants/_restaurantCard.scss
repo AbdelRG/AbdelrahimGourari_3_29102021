@@ -31,13 +31,6 @@
       transition: opacity 3s ease-out;
       cursor: pointer;
 
-      &:hover .icon__heartCard__full {
-        opacity: 1;
-        background: linear-gradient($colour-primary, $colour-secondary);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-      }
-
       .icon__heartCard__full {
         font-size: 25px;
         margin-left: -25px;
@@ -47,12 +40,22 @@
       }
       .icon__heartCard {
         font-size: 25px;
-        transition: color 200ms ease-out;
+        transition: color 2s ease-out;
         cursor: pointer;
         color: black;
       }
-      &:hover .icon__heartCard {
-        color: white;
+      &:hover,
+      :checked ~ {
+        & .icon__heartCard__full {
+          opacity: 1;
+          background: linear-gradient($colour-primary, $colour-secondary);
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+        }
+
+        & .icon__heartCard {
+          color: white;
+        }
       }
     }
 

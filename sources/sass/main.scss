@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/utilitary";
 
 @import "./base/reset";
 @import "./base/typography";
@@ -16,5 +17,6 @@
 @import "./composants/dishesList";
 @import "./composants/restaurantsAttach";
 @import "./composants/link";
+@import "./composants/restaurants";
 
 @import "./pages/indexAnimation";

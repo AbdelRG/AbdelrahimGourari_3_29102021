@@ -13,8 +13,9 @@
   font-size: 16px;
   cursor: pointer;
   transition: all 1s ease-out;
+  opacity: 1;
   &:hover {
-    opacity: 0.9;
+    opacity: 0.7;
     box-shadow: 2px 20px 2px 2px silver;
   }
 }
