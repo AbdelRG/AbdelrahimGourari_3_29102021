@@ -284,37 +284,6 @@ footer .footerList .footerList__element {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.restaurantCard .restaurantCard__caption .restaurantCard__heart {
-  order: 2;
-  width: 50px;
-  display: flex;
-  transition: opacity 3s ease-out;
-  cursor: pointer;
-}
-.restaurantCard .restaurantCard__caption .restaurantCard__heart .icon__heartCard__full {
-  font-size: 25px;
-  margin-left: -25px;
-  opacity: 0;
-  transition: opacity 2s ease-out;
-  color: white;
-}
-.restaurantCard .restaurantCard__caption .restaurantCard__heart .icon__heartCard {
-  font-size: 25px;
-  transition: color 2s ease-out;
-  cursor: pointer;
-  color: black;
-}
-.restaurantCard .restaurantCard__caption .restaurantCard__heart:hover .icon__heartCard__full,
-.restaurantCard .restaurantCard__caption .restaurantCard__heart :checked ~ .icon__heartCard__full {
-  opacity: 1;
-  background: linear-gradient(#9356dc, #ff79da);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-.restaurantCard .restaurantCard__caption .restaurantCard__heart:hover .icon__heartCard,
-.restaurantCard .restaurantCard__caption .restaurantCard__heart :checked ~ .icon__heartCard {
-  color: white;
-}
 .restaurantCard .restaurantCard__caption .restaurantCard__info {
   margin-left: 15px;
   order: 1;
@@ -345,6 +314,45 @@ footer .footerList .footerList__element {
   z-index: 1;
   top: 15px;
   right: 15px;
+}
+
+.restaurantCard__bloc {
+  position: relative;
+}
+
+.restaurantCard__heart {
+  order: 2;
+  width: 50px;
+  display: flex;
+  transition: opacity 3s ease-out;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+}
+.restaurantCard__heart .icon__heartCard__full {
+  font-size: 25px;
+  margin-left: -25px;
+  opacity: 0;
+  transition: opacity 2s ease-out;
+  color: white;
+}
+.restaurantCard__heart .icon__heartCard {
+  font-size: 25px;
+  transition: color 2s ease-out;
+  cursor: pointer;
+  color: black;
+}
+.restaurantCard__heart:hover .icon__heartCard__full,
+.restaurantCard__heart :checked ~ .icon__heartCard__full {
+  opacity: 1;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.restaurantCard__heart:hover .icon__heartCard,
+.restaurantCard__heart :checked ~ .icon__heartCard {
+  color: white;
 }
 
 .restaurantPreview .restaurantPreview__img {
@@ -600,7 +608,7 @@ footer .footerList .footerList__element {
   text-decoration: none;
   color: white;
 }
-.link__footer:visted {
+.link__footer:visited {
   color: white;
 }
 

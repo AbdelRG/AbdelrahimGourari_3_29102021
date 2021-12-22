@@ -24,41 +24,6 @@
     margin-top: 10px;
     margin-bottom: 10px;
 
-    .restaurantCard__heart {
-      order: 2;
-      width: 50px;
-      display: flex;
-      transition: opacity 3s ease-out;
-      cursor: pointer;
-
-      .icon__heartCard__full {
-        font-size: 25px;
-        margin-left: -25px;
-        opacity: 0;
-        transition: opacity 2s ease-out;
-        color: white;
-      }
-      .icon__heartCard {
-        font-size: 25px;
-        transition: color 2s ease-out;
-        cursor: pointer;
-        color: black;
-      }
-      &:hover,
-      :checked ~ {
-        & .icon__heartCard__full {
-          opacity: 1;
-          background: linear-gradient($colour-primary, $colour-secondary);
-          -webkit-text-fill-color: transparent;
-          -webkit-background-clip: text;
-        }
-
-        & .icon__heartCard {
-          color: white;
-        }
-      }
-    }
-
     .restaurantCard__info {
       margin-left: 15px;
       order: 1;
@@ -92,5 +57,45 @@
     z-index: 1;
     top: 15px;
     right: 15px;
+  }
+}
+.restaurantCard__bloc {
+  position: relative;
+}
+.restaurantCard__heart {
+  order: 2;
+  width: 50px;
+  display: flex;
+  transition: opacity 3s ease-out;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+
+  .icon__heartCard__full {
+    font-size: 25px;
+    margin-left: -25px;
+    opacity: 0;
+    transition: opacity 2s ease-out;
+    color: white;
+  }
+  .icon__heartCard {
+    font-size: 25px;
+    transition: color 2s ease-out;
+    cursor: pointer;
+    color: black;
+  }
+  &:hover,
+  :checked ~ {
+    & .icon__heartCard__full {
+      opacity: 1;
+      background: linear-gradient($colour-primary, $colour-secondary);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    & .icon__heartCard {
+      color: white;
+    }
   }
 }
